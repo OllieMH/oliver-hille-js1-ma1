@@ -63,7 +63,7 @@ const createCats = function(cats){
     var html = ""
     for(let i = 0; i < cats.length; i++){
         if(cats[i].hasOwnProperty("age")){
-            html += "<div><h5>" + "Name: " + cats[i].name + "</h5><p>" + "Age: " + cats[i].age + "</p></div>";
+            html += "<div><h5>" + "Name: " + cats[i].name + "</h5><p>" + "Age: " + cats[i].age + "</p></div>"; // Assumed age and name tags are fine even though the task didn't mention them.
         } else {
             html += "<div><h5>" + "Name: " + cats[i].name + "</h5><p>" + "Age Unknown" + "</p></div>";
         }
