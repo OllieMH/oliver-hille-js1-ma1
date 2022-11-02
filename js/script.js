@@ -56,3 +56,21 @@ const listCats = function(list){
     }
 }
 listCats(cats);
+
+// question 8
+
+const createCats = function(cats){
+    var html = ""
+    for(let i = 0; i < cats.length; i++){
+        if(cats[i].hasOwnProperty("age")){
+            html += "<div><h5>" + "Name: " + cats[i].name + "</h5><p>" + "Age: " + cats[i].age + "</p></div>";
+        } else {
+            html += "<div><h5>" + "Name: " + cats[i].name + "</h5><p>" + "Age Unknown" + "</p></div>";
+        }
+    }
+    return html 
+}
+const catContainer = document.querySelector(".cat-container");
+catContainer.innerHTML = createCats(cats);
+
+
